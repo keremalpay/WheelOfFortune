@@ -1,17 +1,33 @@
 <html>
+
 <head>
-<link rel="stylesheet" href="style.css">
-<title>ÇarkıFelek</title>
+    <link rel="stylesheet" href="style.css">
+    <title>ÇarkıFelek</title>
+    <style type="text/css">
+        .wheelelement{
+            writing-mode: tb-rl;
+        }
+        .wheelelement:nth-child(odd){
+            background-color:aqua;
+        }
+        .wheelelement:nth-child(even){
+            background-color:antiquewhite;
+        }
+    </style>
 </head>
+
 <body>
-<button id="spin">SPIN</button>
-<input type="text" id="myInput" placeholder="Yemeği Girin">
-<button id="addbutton" onclick="addFood()">Ekle</button>
+    <button id="spin">SPIN</button>
+    <input type="text" id="myInput" placeholder="Yemeği Girin">
+    <button id="addbutton">Ekle</button>
 
-<span class="arrow"></span>
-<div class="container">
+    <span class="arrow"></span>
+    <div class="container" id="wheelcontainer">
 
-</div>
-<script src="script.js"></script>
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>
